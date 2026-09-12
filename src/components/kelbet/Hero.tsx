@@ -58,14 +58,14 @@ export function Hero({ onStart }: { onStart: () => void }) {
               alt="Девушка KELBET с апельсинами"
               width={768}
               height={1024}
-              className="animate-soft-float absolute inset-x-0 bottom-[2%] z-10 h-[98%] w-full object-contain object-bottom drop-shadow-[0_24px_34px_oklch(0.6_0.116_8/0.2)]"
+              className="animate-soft-float absolute inset-x-0 bottom-[2%] z-10 h-[98%] w-full object-contain object-bottom drop-shadow-[0_24px_34px_oklch(0.6_0.116_8/0.2)] lg:-left-[4%] lg:h-[108%] lg:w-[108%]"
             />
             <img
               src={heroProductsCutout}
               alt="Премиальная косметика KELBET"
               width={768}
               height={1024}
-              className="pointer-events-none absolute -bottom-[4%] -left-[5%] z-20 h-[48%] w-[78%] object-contain object-bottom drop-shadow-[0_20px_24px_oklch(0.6_0.116_8/0.24)] sm:h-[52%] sm:w-[82%] lg:-left-[9%] lg:h-[54%] lg:w-[86%]"
+              className="pointer-events-none absolute -bottom-[4%] -left-[5%] z-20 h-[48%] w-[78%] object-contain object-bottom drop-shadow-[0_20px_24px_oklch(0.6_0.116_8/0.24)] sm:h-[52%] sm:w-[82%] lg:-left-[11%] lg:h-[60%] lg:w-[94%]"
             />
             <div className="pointer-events-none absolute -inset-x-[4%] bottom-0 z-30 h-[17%] bg-gradient-to-t from-background/85 via-background/25 to-transparent blur-sm" />
             <p className="script-note absolute right-1 top-[3%] z-40 hidden text-right sm:block lg:-right-3">
