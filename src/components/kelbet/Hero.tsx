@@ -1,5 +1,6 @@
 import { ArrowRight, ArrowDown } from "lucide-react";
 import heroProducts from "@/assets/hero-products.jpg";
+import heroWoman from "@/assets/hero-woman.png";
 
 export function Hero({ onStart }: { onStart: () => void }) {
   return (
@@ -37,17 +38,29 @@ export function Hero({ onStart }: { onStart: () => void }) {
             </button>
           </div>
 
-          <div className="animate-rise relative" style={{ animationDelay: "220ms" }}>
-            <div className="animate-soft-float overflow-hidden rounded-[2.75rem] shadow-[var(--shadow-lift)]">
+          <div
+            className="animate-rise relative mx-auto aspect-[4/5] w-full max-w-[34rem] lg:mx-0 lg:aspect-[5/6] lg:max-w-none"
+            style={{ animationDelay: "220ms" }}
+          >
+            <div className="pointer-events-none absolute -inset-x-[7%] bottom-[1%] top-[1%] overflow-hidden [mask-image:radial-gradient(ellipse_54%_48%_at_51%_52%,black_45%,transparent_92%)]">
               <img
                 src={heroProducts}
                 alt="Премиальная корейская косметика на каменном подиуме среди цветов сакуры"
                 width={1200}
                 height={1408}
-                className="h-full w-full object-cover"
+                className="h-full w-full scale-110 object-cover opacity-75 mix-blend-multiply"
               />
             </div>
-            <p className="script-note absolute -top-4 right-4 hidden text-right sm:block">
+            <div className="pointer-events-none absolute inset-x-[9%] bottom-[4%] top-[5%] rounded-[50%] bg-petal/55 blur-3xl" />
+            <img
+              src={heroWoman}
+              alt="Девушка KELBET с апельсинами"
+              width={768}
+              height={1024}
+              className="animate-soft-float absolute inset-x-0 bottom-0 z-10 h-[98%] w-full object-contain object-bottom drop-shadow-[0_24px_34px_oklch(0.6_0.116_8/0.2)]"
+            />
+            <div className="pointer-events-none absolute inset-x-[12%] bottom-0 z-20 h-[24%] bg-gradient-to-t from-background/80 via-background/20 to-transparent blur-sm" />
+            <p className="script-note absolute right-1 top-[3%] z-30 hidden text-right sm:block lg:-right-3">
               Korean beauty
               <br />
               Real results ♡
