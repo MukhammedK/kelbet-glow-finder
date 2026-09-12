@@ -42,13 +42,13 @@ export function Hero({ onStart }: { onStart: () => void }) {
             className="animate-rise relative mx-auto aspect-[4/5] w-full max-w-[34rem] lg:mx-0 lg:aspect-[5/6] lg:max-w-none"
             style={{ animationDelay: "220ms" }}
           >
-            <div className="pointer-events-none absolute inset-x-[3%] bottom-[1%] top-[4%] overflow-hidden [mask-image:radial-gradient(ellipse_72%_72%_at_52%_48%,black_58%,transparent_100%)]">
+            <div className="pointer-events-none absolute -inset-x-[7%] bottom-[1%] top-[1%] overflow-hidden [mask-image:radial-gradient(ellipse_54%_48%_at_51%_52%,black_45%,transparent_92%)]">
               <img
                 src={heroProducts}
                 alt="Премиальная корейская косметика на каменном подиуме среди цветов сакуры"
                 width={1200}
                 height={1408}
-                className="h-full w-full scale-110 object-cover opacity-80 mix-blend-multiply"
+                className="h-full w-full scale-110 object-cover opacity-75 mix-blend-multiply"
               />
             </div>
             <div className="pointer-events-none absolute inset-x-[9%] bottom-[4%] top-[5%] rounded-[50%] bg-petal/55 blur-3xl" />
