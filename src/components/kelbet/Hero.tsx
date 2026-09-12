@@ -1,5 +1,6 @@
 import { ArrowRight, ArrowDown } from "lucide-react";
 import heroProducts from "@/assets/hero-products.jpg";
+import heroProductsCutout from "@/assets/hero-products-cutout.png";
 import heroWoman from "@/assets/hero-woman.png";
 
 export function Hero({ onStart }: { onStart: () => void }) {
@@ -42,25 +43,32 @@ export function Hero({ onStart }: { onStart: () => void }) {
             className="animate-rise relative mx-auto aspect-[4/5] w-full max-w-[34rem] lg:mx-0 lg:aspect-[5/6] lg:max-w-none"
             style={{ animationDelay: "220ms" }}
           >
-            <div className="pointer-events-none absolute -inset-x-[7%] bottom-[1%] top-[1%] overflow-hidden [mask-image:radial-gradient(ellipse_54%_48%_at_51%_52%,black_45%,transparent_92%)]">
+            <div className="pointer-events-none absolute -inset-x-[13%] -bottom-[2%] -top-[5%] overflow-hidden [mask-image:radial-gradient(ellipse_48%_44%_at_52%_47%,black_34%,transparent_82%)]">
               <img
                 src={heroProducts}
                 alt="Премиальная корейская косметика на каменном подиуме среди цветов сакуры"
                 width={1200}
                 height={1408}
-                className="h-full w-full scale-110 object-cover opacity-75 mix-blend-multiply"
+                className="h-full w-full scale-125 object-cover opacity-55 mix-blend-multiply"
               />
             </div>
-            <div className="pointer-events-none absolute inset-x-[9%] bottom-[4%] top-[5%] rounded-[50%] bg-petal/55 blur-3xl" />
+            <div className="pointer-events-none absolute inset-x-[6%] bottom-[4%] top-[2%] rounded-[50%] bg-petal/55 blur-3xl" />
             <img
               src={heroWoman}
               alt="Девушка KELBET с апельсинами"
               width={768}
               height={1024}
-              className="animate-soft-float absolute inset-x-0 bottom-0 z-10 h-[98%] w-full object-contain object-bottom drop-shadow-[0_24px_34px_oklch(0.6_0.116_8/0.2)]"
+              className="animate-soft-float absolute inset-x-0 bottom-[2%] z-10 h-[98%] w-full object-contain object-bottom drop-shadow-[0_24px_34px_oklch(0.6_0.116_8/0.2)]"
             />
-            <div className="pointer-events-none absolute inset-x-[12%] bottom-0 z-20 h-[24%] bg-gradient-to-t from-background/80 via-background/20 to-transparent blur-sm" />
-            <p className="script-note absolute right-1 top-[3%] z-30 hidden text-right sm:block lg:-right-3">
+            <img
+              src={heroProductsCutout}
+              alt="Премиальная косметика KELBET"
+              width={768}
+              height={1024}
+              className="pointer-events-none absolute -bottom-[4%] -left-[5%] z-20 h-[48%] w-[78%] object-contain object-bottom drop-shadow-[0_20px_24px_oklch(0.6_0.116_8/0.24)] sm:h-[52%] sm:w-[82%] lg:-left-[9%] lg:h-[54%] lg:w-[86%]"
+            />
+            <div className="pointer-events-none absolute -inset-x-[4%] bottom-0 z-30 h-[17%] bg-gradient-to-t from-background/85 via-background/25 to-transparent blur-sm" />
+            <p className="script-note absolute right-1 top-[3%] z-40 hidden text-right sm:block lg:-right-3">
               Korean beauty
               <br />
               Real results ♡
