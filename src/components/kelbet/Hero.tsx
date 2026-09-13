@@ -19,7 +19,7 @@ export function Hero({ onStart }: { onStart: () => void }) {
               <span aria-hidden className="text-base leading-none">
                 🇰🇷
               </span>
-              Оригинал из Кореи
+              Доставка оригинальной косметики из Кореи
             </span>
 
             <h1 className="display-title mt-7 text-[2.85rem] leading-[1.03] sm:text-6xl lg:text-[4.2rem]">
@@ -28,7 +28,7 @@ export function Hero({ onStart }: { onStart: () => void }) {
             </h1>
 
             <p className="mt-6 max-w-md text-base leading-relaxed text-muted-foreground sm:text-lg">
-              Премиальный уход для вашей естественной красоты
+              Премиальный уход с которыми пользуются сами Кореянки
             </p>
 
             <button type="button" onClick={onStart} className="btn-rose mt-9 w-full sm:w-auto">
@@ -48,9 +48,7 @@ export function Hero({ onStart }: { onStart: () => void }) {
               />
             </div>
             <p className="script-note absolute -top-4 right-4 hidden text-right sm:block">
-              Korean beauty
               <br />
-              Real results ♡
             </p>
           </div>
         </div>
