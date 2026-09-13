@@ -4,6 +4,7 @@ import { Hero } from "@/components/kelbet/Hero";
 import { Products } from "@/components/kelbet/Products";
 import { Quiz } from "@/components/kelbet/Quiz";
 import { FinalCta } from "@/components/kelbet/FinalCta";
+import { Reviews } from "@/components/kelbet/Reviews";
 import { Footer } from "@/components/kelbet/Footer";
 import { Petals } from "@/components/kelbet/Petals";
 import { emptyQuiz, type QuizState } from "@/components/kelbet/quiz-data";
@@ -42,6 +43,7 @@ function Index() {
       <Products onStart={scrollToQuiz} />
       <Quiz id={QUIZ_ID} state={quiz} setState={setQuiz} />
       <FinalCta state={quiz} />
+      <Reviews />
       <Footer />
     </main>
   );
