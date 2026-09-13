@@ -78,10 +78,11 @@ export function Reviews() {
                   key={photo.src}
                   className="basis-[68%] pl-3 sm:basis-[48%] sm:pl-5 lg:basis-[31%]"
                 >
-                  <button
+                  <Button
                     type="button"
+                    variant="ghost"
                     onClick={() => openPhoto(index)}
-                    className="group block aspect-[4/5] w-full cursor-zoom-in overflow-hidden rounded-3xl bg-card shadow-[var(--shadow-soft)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-4 focus-visible:ring-offset-background"
+                    className="group block h-auto aspect-[4/5] w-full cursor-zoom-in overflow-hidden rounded-3xl bg-card p-0 shadow-[var(--shadow-soft)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-4 focus-visible:ring-offset-background hover:bg-card"
                     aria-label={`Открыть отзыв ${index + 1}`}
                   >
                     <img
@@ -90,7 +91,7 @@ export function Reviews() {
                       loading="lazy"
                       className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.025]"
                     />
-                  </button>
+                  </Button>
                 </CarouselItem>
               ))}
             </CarouselContent>
@@ -109,6 +110,9 @@ export function Reviews() {
               if ((event.target as HTMLElement).closest("[data-lightbox-control]")) {
                 event.preventDefault();
               }
+            }}
+            onClick={(event) => {
+              if (event.currentTarget === event.target) setOpen(false);
             }}
             onTouchStart={(event) => {
               touchStartX.current = event.touches[0]?.clientX ?? null;
